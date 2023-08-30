@@ -1,31 +1,46 @@
-* Many of the columns in the 'matches' files are self-explanatory, or are very similar to previous columns.
+* Many of the columns in the 'matches' files are self-explanatory, or are very similar to previous
+ columns.
 
 tourney_id
-- a unique identifier for each tournament, such as 2020-888. The exact formats are borrowed from several different sources, so while the first four characters are always the year, the rest of the ID doesn't follow a predictable structure.
+- a unique identifier for each tournament, such as 2020-888. The exact formats are borrowed
+ from several different sources, so while the first four characters are always the year, 
+ the rest of the ID doesn't follow a predictable structure.
 
 tourney_name
 surface
 draw_size
-- number of players in the draw, often rounded up to the nearest power of 2. (For instance, a tournament with 28 players may be shown as 32.)
+- number of players in the draw, often rounded up to the nearest power of 2. (For instance, 
+a tournament with 28 players may be shown as 32.)
 
 tourney_level
-- For men: 'G' = Grand Slams, 'M' = Masters 1000s, 'A' = other tour-level events, 'C' = Challengers, 'S' = Satellites/ITFs, 'F' = Tour finals and other season-ending events, and 'D' = Davis Cup 
-- For women, there are several additional tourney_level codes, including 'P' = Premier, 'PM' = Premier Mandatory, and 'I' = International. The various levels of ITFs are given by the prize money (in thousands), such as '15' = ITF $15,000. Other codes, such as 'T1' for Tier I (and so on) are used for older WTA tournament designations. 'D' is used for Federation/Fed/Billie Jean King Cup, and also for Wightman Cup and Bonne Bell Cup.
+- For men: 'G' = Grand Slams, 'M' = Masters 1000s, 'A' = other tour-level 
+events, 'C' = Challengers, 'S' = Satellites/ITFs, 'F' = Tour finals
+ and other season-ending events, and 'D' = Davis Cup 
+- For women, there are several additional tourney_level codes, 
+including 'P' = Premier, 'PM' = Premier Mandatory, and 'I' = International.
+ The various levels of ITFs are given by the prize money (in thousands), 
+ such as '15' = ITF $15,000. Other codes, such as 'T1' for Tier I (and so on)
+  are used for older WTA tournament designations. 'D' is used for 
+  Federation/Fed/Billie Jean King Cup, and also for Wightman Cup and Bonne Bell Cup.
 
-- Others, eventually for both genders: 'E' = exhibition (events not sanctioned by the tour, though the definitions can be ambiguous), 'J' = juniors, and 'T' = team tennis, which does yet appear anywhere in the dataset but will at some point.
+- Others, eventually for both genders: 'E' = exhibition (events not sanctioned by 
+the tour, though the definitions can be ambiguous), 'J' = juniors, and 'T' = team 
+tennis, which does yet appear anywhere in the dataset but will at some point.
 
 tourney_date
 - eight digits, YYYYMMDD, usually the Monday of the tournament week.
 
 match_num
-- a match-specific identifier. Often starting from 1, sometimes counting down from 300, and sometimes arbitrary. 
+- a match-specific identifier. Often starting from 1, sometimes counting down 
+from 300, and sometimes arbitrary. 
 
 winner_id
 - the player_id used in this repo for the winner of the match
 
 winner_seed
 winner_entry
-- 'WC' = wild card, 'Q' = qualifier, 'LL' = lucky loser, 'PR' = protected ranking, 'ITF' = ITF entry, and there are a few others that are occasionally used.
+- 'WC' = wild card, 'Q' = qualifier, 'LL' = lucky loser, 'PR' = protected ranking, 
+'ITF' = ITF entry, and there are a few others that are occasionally used.
 
 winner_name
 winner_hand
