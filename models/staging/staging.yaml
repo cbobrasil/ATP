@@ -3,9 +3,6 @@ version: 2
 models:
   - name: stg_matches_1968
     description: Model for YYYY tennis match data
-    materialized: table
-    database: public
-    schema: staging  
     unique_key: match_num
     alias: atp_matches_year
     columns:

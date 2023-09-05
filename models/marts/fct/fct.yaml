@@ -3,6 +3,8 @@ version: 2
 models:
   - name: dim_matches
     description: Model for all years tennis match data
-    materialized: table
-    database: public 
-    schema: public   
+
+
+  - name: dim_matches_double
+    description: Model for all years tennis match double data
+
