@@ -13,20 +13,18 @@ select
 , winner_name
 , winner_hand
 , winner_ht
-, winner_ioc
+, winner_ioc as winner_country
 , winner_age
 , dim_winner.height as winner_height
-, dim_winner.ioc as dim_winner_country
 , loser_id
 , loser_seed
 , loser_entry
 , loser_name
 , loser_hand
 , loser_ht
-, loser_ioc
+, loser_ioc as loser_country
 , loser_age
-, dim_looser.height as loser_height
-, dim_looser.ioc as dim_looser_country
+, dim_loser.height as loser_height
 , score
 , best_of
 , round
@@ -60,5 +58,5 @@ select
   {{ ref('dim_players') }} as dim_winner 
     on stg.winner_id = dim_winner.player_id
  left join 
-  {{ ref('dim_players') }} as dim_looser
-    on stg.loser_id = dim_looser.player_id
+  {{ ref('dim_players') }} as dim_loser
+    on stg.loser_id = dim_loser.player_id
