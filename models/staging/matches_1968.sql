@@ -49,4 +49,4 @@ select
 , loser_rank
 , loser_rank_points
 , 'atp_matches_year' as file_source
- --from {{ source('seeds', 'atp_matches_1968') }}
+ from {{ ref('atp_matches_1968') }}
