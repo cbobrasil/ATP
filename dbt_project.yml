@@ -23,3 +23,16 @@ target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_modules"
+
+
+models:
+
+    staging:
+       +database: public
+       +materialized: table
+       +schema: staging
+
+    marts:
+       +database: public
+       +materialized: table
+       +schema: marts
