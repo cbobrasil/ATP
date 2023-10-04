@@ -8,7 +8,7 @@
       union all
       {% endif %}
       select 
-          '{{ year }}' as file_year 
+        {{ year }} as file_year 
         , tourney_id
         , tourney_name
         , surface
