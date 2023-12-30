@@ -1,5 +1,9 @@
 # ATP Project
 
+This project gets tables from the ATP API per year and user a dbt macro to unify all the information into one fact table   
+
+
+## Data Dictionary
 * Many of the columns in the 'matches' files are self-explanatory, or are very similar to previous
  columns.
 
